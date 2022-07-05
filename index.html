@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="styles.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <header>
+    <h1 id="title">tripNow survey form</h1>
+	<p id="description">Only with your opinion we can improve our services</p>
+  </header>
+  <form id="survey-form">
+	<li>
+		<label id="name-label" for="name">Name</label>
+    	<input id="name" type="text" placeholder="Enter your name..." required>
+	</li>
+	<li>
+		<label id="email-label" for="label">Email</label>
+		<input id="email" type="email" placeholder="email.address@gmail.com" required>
+	</li>
+	<li>
+		<label id="number-label" for="number">Age</label>
+		<input id="number" type="number" min="18" max="99" placeholder="18" required>
+	</li>
+	<li>
+		<label id="dropdown-label" for="dropdown">Select an option:</label>
+		<select id="dropdown" required>
+			<option disabled selected value>I was on holiday with...</option>
+			<option value="family">My family</option>
+			<option value="friends">A firend</option>
+			<option value="couple">A group of firends</option>
+			<option value="alone">Alone</option>
+		</select>
+	</li>
+	<hr>
+	<li class="radio-section">How much I rate...
+		<li class="radio-inputs">
+			<label class="radio-label">Booking service:</label>
+			<div class="radio-cont">
+				<input class="radio" type="radio" name="booking" value="1" required>1
+				<input class="radio" type="radio" name="booking" value="2" required>2
+				<input class="radio" type="radio" name="booking" value="3" required>3
+				<input class="radio" type="radio" name="booking" value="4" required>4
+				<input class="radio" type="radio" name="booking" value="5" required>5
+			</div>
+		</li>
+		<li class="radio-inputs">
+			<label class="radio-label">Travel:</label>
+			<div class="radio-cont">
+				<input class="radio" type="radio" name="travel" value="1" required>1
+				<input class="radio" type="radio" name="travel" value="2" required>2
+				<input class="radio" type="radio" name="travel" value="3" required>3
+				<input class="radio" type="radio" name="travel" value="4" required>4
+				<input class="radio" type="radio" name="travel" value="5" required>5
+			</div>
+		</li>
+		<li class="radio-inputs">
+			<label class="radio-label">Hotel:</label>
+			<div class="radio-cont">
+				<input class="radio" type="radio" name="hotel" value="1" required>1
+				<input class="radio" type="radio" name="hotel" value="2" required>2
+				<input class="radio" type="radio" name="hotel" value="3" required>3
+				<input class="radio" type="radio" name="hotel" value="4" required>4
+				<input class="radio" type="radio" name="hotel" value="5" required>5
+			</div>
+		</li>
+		<li class="radio-inputs">
+			<label class="radio-label">Whole experience:</label>
+			<div class="radio-cont">
+				<input class="radio" type="radio" name="experience" value="1" required>1
+				<input class="radio" type="radio" name="experience" value="2" required>2
+				<input class="radio" type="radio" name="experience" value="3" required>3
+				<input class="radio" type="radio" name="experience" value="4" required>4
+				<input class="radio" type="radio" name="experience" value="5" required>5
+			</div>
+		</li>
+	</li>
+	<hr>
+	<li>
+		<label id="textarea-label" for="textarea">Want to let us know anything else?</label>
+		<textarea id="textarea" rows="4" placeholder="My last holiday with tripNow was..."></textarea>
+	</li>
+	<hr>
+	<li class="check-inputs">
+		<input id="privacy" type="checkbox" value="agree" required>
+    	<label class="checkbox-label" for="privacy">
+			I agree with the terms of tripNow.org and Privacy Policy.
+		</label>
+	</li>
+	<li class="check-inputs">
+		<input id="newsletter" type="checkbox" value="send-newsletter">
+		<label class="checkbox-label" for="newsletter">
+			I would like to get the monthly newsletter with news and special offers.
+		</label>
+	</li>
+	<button id="submit" type="submit">Submit</button>
+  </form>
+</body>
+</html>
